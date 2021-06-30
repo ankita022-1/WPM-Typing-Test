@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WPM Typing Test</title>
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="body">
+   
+    <!-- header  -->
+    <header>
+        <h4>WPM Typing Test</h4>
+    </header>
+    <!---------------------------------------------section1----------------------------------- -->
+    <section id="sec1">
+        <div class="main_div" id="main_div_primary">
+            <div id="para">
+                <h3 id="arr" onCopy="return false">Check Your Typing Speed</h3>
+            </div>
+            <textarea cols="1" rows="50" id="textarea" placeholder="Lets start" onpaste="return false;"
+                onCopy="return false" onCut="return false" disabled></textarea>
+        </div>
+        <input type="submit" value="Start" id="start" class="btn">
+    </section>
+    <!---------------------------------------------section2----------------------------------- -->
+    <section id="sec2">
+        <div class="main_div" id="main_div_secondary">
+            <!-- primary box -->
+            <div class="box" id="primary_box">
+                <div class="result">
+                    <span id="r_wpm"></span>
+                    <span>WPM</span>
+                </div>
+                <span class="prop">Typing Speed</span>
+            </div>
+            <!-- mul_operator -->
+            <div class="operator" id="mul_operator"><i class="fas fa-times"></i></div>
+            <!-- secondary box -->
+            <div class="box" id="secondary_box">
+                <div class="result">
+                    <span id="r_accuracy"></span>
+                </div>
+                <span class="prop">Accuracy</span>
+            </div>
+            <!-- equal_operator -->
+            <div class="operator" id="equal_operator"><i class="fas fa-equals"></i></div>
+            <!-- tertiary box -->
+            <div class="box" id="tertiary_box">
+                <div class="result">
+                    <span id="r_net_wpm"></span>
+                    <span>WPM</span>
+                </div>
+                <span class="prop">Net Speed</span>
+            </div>
+        </div>
+        <input type="submit" value="Retake Test" id="retake" class="btn">
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; copyright www.truelovecalculator.com ! All Right Reserved</p>
+    </footer>
+
+    <script src="index.js">
+    </script>
+</body>
+
+
+</html>

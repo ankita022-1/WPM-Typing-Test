@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    position: relative;
+    height:100vh;
+    width:100vw; 
+}
+
+#body::before{
+    content:'';
+    position: absolute;
+    background-image: url("images/bg_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    height:100%;
+    width:100%;    
+}
+
+/* --------------------------------------------hearder section-----------------------------*/
+header {
+    height: 124px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header h4 {
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+    text-shadow: 2px 8px 5px darkred, 7px 10px 7px black, 5px 6px 4px white;
+    margin-bottom: 16px;
+}
+
+/* -------------------------------------section---------------------------- */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 42%;
+    margin: 2px auto;
+    position: relative;
+
+}
+
+.main_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 310px;
+}
+
+.btn {
+    height: auto;
+    width: auto;
+    font-size: 27px;
+    font-weight: bold;
+    color: darkred;
+    text-shadow: 4px 2px 3px black;
+    letter-spacing: 2px;
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 2px 23px;
+    margin: 30px;
+    transition: font-size, 3s, ease-in-out 0.2s;
+    animation: anime 2s linear 0s infinite both;
+
+}
+
+.btn:hover {
+    font-size: 30px;
+    cursor: pointer;
+    animation: none;
+}
+
+.btn:active {
+    color: darkgreen;
+    background-color: rgba(211, 194, 194, 0.5);
+}
+
+/* -----------------------------------------------------section1------------------------------------------ */
+#sec1 {
+    display: flex;
+}
+
+#para {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 4px 4px 2px green;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(252 250 250 / 70%);
+}
+
+/* -----------------------------------------------section2------------------------------------- */
+#sec2 {
+    display: none;
+    height: 354px;
+    width: 45%;
+}
+
+#main_div_secondary {
+    flex-direction: row;
+}
+
+.box {
+    height: 160px;
+    width: 160px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("images/bg_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.prop {
+    font-size: 24px;
+    color: darkred;
+    text-shadow: 3px 2px 2px black;
+}
+
+.result {
+    border-radius: 48px;
+    height: 110px;
+    width: 125px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("images/bg_img2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: anime 2s linear 0s infinite both;
+}
+
+@keyframes anime {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.operator {
+    font-size: 40px;
+}
+/* -------------------------------------footer---------------------------- */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    padding: 3px;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    
+}
