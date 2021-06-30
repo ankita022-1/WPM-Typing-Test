@@ -1,2 +1,3 @@
 # WPM-Typing-Test
-WPM Typing Test using HTML, CSS, JS
+A typing test to show your typing speed, accuracy, net speed.
+User needs to click on start button to enable textarea and then click on done after typing the given text.   
